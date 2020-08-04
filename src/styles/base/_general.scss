@@ -1,0 +1,65 @@
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+
+    max-width: 100%;
+    @include container();
+
+    @include fullsize {
+        width: 1200px;
+    }
+
+    @include desktop {
+        width: 960px;
+    }
+
+    @include tablet {
+        width: 640px;
+    }
+
+    @include phablet {
+        width: 480px;
+    }
+
+    @include mobile {
+        width: 320px;
+    }
+
+    box-sizing: border-box;
+}
+
+body {
+    @include FuturaPTBook;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $color-white;
+
+    width: 100%;
+    overflow-x: hidden;
+
+    background-color: $color-white;
+}
+
+button {
+    color: inherit;
+    -webkit-appearance: none;
+}
+
+p {
+  margin: 0;
+  color: #fff;
+}

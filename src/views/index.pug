@@ -1,0 +1,18 @@
+extends layouts/default
+include helpers/mixins
+
+block variables
+	- const title = "Адреса проведения"
+
+block content
+	include ../blocks/modules/address/address
+
+block scripts
+	script(src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js")
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js")
+	//- script(src="../../../storage/app/public/js/jquery-ui.min.js")
+	//- script(src="../../../storage/app/public/js/function.js")
+	//- script(src="../../../storage/app/public/js/geo_search.js")
+	//- script(src="../../../storage/app/public/js/sourcebuster.min.js")
+	//- script(src="../../../storage/app/public/js/utm.js")
+	script(src="./js/main.js")

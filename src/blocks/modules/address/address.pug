@@ -1,0 +1,56 @@
+section.address
+  .container
+    .address__header
+      img(src="../img/logo.svg", alt="Лого Like Центр",width='73',height='63').address__header-logo
+    .address__block
+      div.address__block-location
+        p.address__block-title Адрес проведения
+        p.address__block-place Уточняется
+      div
+        p.address__block-dropdown-tip Введите город
+        input(type="text", placeholder="Например, Москва").address__block-dropdown
+        ul.address__block-dropdown-list
+          li.address__block-dropdown-item Москва
+    .address__inform
+      .address__inform-block
+        .address__inform-module
+          p.address__inform-title Организатор:
+          .address__inform-organaizer
+            p.address__inform-phone 
+              a(href="tel:88005507619").address-phone 8 800 550 76-19
+            p.address__inform-org Like Центр Москва
+        p.address__inform-questions Возникли вопросы?
+          br
+          | Напишите в 
+          a.address__inform-questions-link(href="https://vk.com/likecentre", target="_blank") Бизнес-сообщество
+      div
+        table.address__table 
+          tr
+            td 
+            td.address__table-date
+              span.address-date
+              br
+              span.address__table-weekday 
+            td.address__table-date
+              span.address-date
+              br
+              span.address__table-weekday 
+            td.address__table-date 
+              span.address-date
+              br
+              span.address__table-weekday 
+          tr.first__column 
+            td.address__table-title.address__table-border Регистрация
+            td.address__table-border.address-registration <span class="address__table-tip">Регистрация <br></span>
+            td.address__table-border.address-registration <span class="address__table-tip">Регистрация <br></span>
+            td.address__table-border.address-registration <span class="address__table-tip">Регистрация <br></span>
+          tr.second__column 
+            td.address__table-title.address__table-border Начало
+            td.address__table-border.address-start <span class="address__table-tip">Начало <br></span>
+            td.address__table-border.address-start <span class="address__table-tip">Начало <br></span>
+            td.address__table-border.address-start <span class="address__table-tip">Начало <br></span>
+          tr.third__column 
+            td.address__table-title Окончание
+            td.address-end <span class="address__table-tip">Окончание <br></span>
+            td.address-end <span class="address__table-tip">Окончание <br></span>
+            td.address-end <span class="address__table-tip">Окончание <br></span>
